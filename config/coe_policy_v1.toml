@@ -1,0 +1,6 @@
+version = "2026-08-13-v1"
+effective_from = 20090101
+risk_free_rate = 0.017
+equity_risk_premium = 0.055
+beta_window_days = 252
+beta_min_observations = 120

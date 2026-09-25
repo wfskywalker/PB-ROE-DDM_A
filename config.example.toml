@@ -1,0 +1,25 @@
+# Copy to config.toml only when you have access to the external historical data.
+# The synthetic example and unit tests do not need this file.
+[paths]
+asset_pricing_root = "/absolute/path/to/your/point-in-time-A-share-data"
+output_root = "artifacts"
+run_log_root = "logs/runs"
+raw_data_root = "data/raw"
+
+[factor]
+broker_lookback_days = 180
+min_brokers_per_year = 2
+forecast_year_count = 3
+min_industry_peer_count = 10
+roe_history_years = 3
+min_coe_growth_spread = 0.02
+growth_buckets = [0.00, 0.01, 0.02, 0.03, 0.04]
+
+[backtest]
+history_start_date = 20120330
+history_end_date = 20260630
+group_count = 10
+top_pool_first_group = 8
+buy_commission = 0.0001
+sell_commission = 0.0001
+stamp_tax = 0.0005
