@@ -52,11 +52,14 @@ The destination is a standalone Git repository on `main`. The initial commit
 and final clean-tree check are recorded by the repository history and final
 handoff; GitHub remote publication is a separate gate.
 
-## Gate 5 — GitHub publication: PENDING
+## Gate 5 — GitHub publication: PASS
 
 **Criterion:** the reviewed initial commit is pushed to a public GitHub
 repository under the intended account, and the remote repository is opened
 to confirm the README and file boundary.
 
-**Observed:** no GitHub repository has yet been created or verified. This
-status must not be interpreted as a published repository.
+**Observed:** the reviewed `main` branch was pushed to the public repository
+`wfskywalker/PB-ROE-DDM_A`. The default-branch README was fetched back from
+GitHub and matched the local project. The repository name intentionally follows
+the repository created by the owner; the local folder remains
+`PB-ROE-DDM_AShare`.
